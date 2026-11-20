@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Bioskop22 {
     public static void main(String[] args) {
          String[][] penonton = new String[4][3];
