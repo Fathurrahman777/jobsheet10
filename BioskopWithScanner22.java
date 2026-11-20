@@ -30,6 +30,10 @@ public class BioskopWithScanner22 {
                         System.out.println("Nomor baris/kolom kursi tidak tersedia");
                         continue;
                     }
+                    if (penonton[baris - 1][kolom - 1] !=null) {
+                        System.out.println("Kursi sudah terisi!");
+                        continue;
+                    }
                     penonton[baris - 1][kolom - 1]= nama;
                     System.out.println("Data berhasil ditambahkan!");
                     break;
