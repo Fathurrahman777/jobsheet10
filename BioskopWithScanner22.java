@@ -25,8 +25,11 @@ public class BioskopWithScanner22 {
                     baris = sc.nextInt();
                     System.out.print("Masukkan kolom: ");
                     kolom = sc.nextInt();
-                    
 
+                    if  (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
+                        System.out.println("Nomor baris/kolom kursi tidak tersedia");
+                        continue;
+                    }
                     penonton[baris - 1][kolom - 1]= nama;
                     System.out.println("Data berhasil ditambahkan!");
                     break;
@@ -47,6 +50,8 @@ public class BioskopWithScanner22 {
                     System.out.println("Pilihan tidak tersedia!");
             }
         } while (menu != 3);
+
+        
 
         sc.close();
     }    
